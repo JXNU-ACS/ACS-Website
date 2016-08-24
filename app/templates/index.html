@@ -1,0 +1,15 @@
+{% import "bootstrap/wtf.html" as wtf %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+	<title></title>
+</head>
+<body>
+{% for message in get_flashed_messages() %}
+<div>{{ message }}</div>{% endfor %}
+
+	{{ wtf.quick_form(form) }}
+
+</body>
+</html>
