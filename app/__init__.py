@@ -1,12 +1,13 @@
 
 from flask import Flask
-import MySQLdb
-from flask.ext.sqlalchemy import SQLAlchemy 
+from flask_sqlalchemy import SQLAlchemy
 from config import config
 from flask_bootstrap import Bootstrap
+
 bootsrap = Bootstrap()
 
 db = SQLAlchemy()
+
 
 def create_app(config_name):
     app = Flask(__name__)

@@ -1,5 +1,10 @@
 # ACS-Website
 the website of JXNU-ACS
 
-##这是协会的网站的代码仓库
 
+#环境准备
+
+```
+    pip install -r requirements.txt
+    python manage.py runserver
+```
