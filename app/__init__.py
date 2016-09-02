@@ -1,4 +1,3 @@
-
 from flask import Flask
 import MySQLdb
 from flask_sqlalchemy import SQLAlchemy 
