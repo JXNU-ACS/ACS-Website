@@ -30,7 +30,7 @@ def index():
                 db.session.add(student)
                 redirect(url_for('main.index'))
             elif  form.name.data == requests.post(url, data=json.dumps(add_post_data),headers=headers).json()['student_name']:
-                if Student(stu_id=add_post_data['student_id'],name=form.name.data,qq=form.qq.data,stu_class=form.stu_class.data) is None:
+                if Student.query.filter_by(stu_id=add_post_data['student_id']) is None:
                     student = Student(stu_id=add_post_data['student_id'],name=form.name.data,qq=form.qq.data,stu_class=form.stu_class.data)
                     flash (u'报名成功！！！')
                     db.session.add(student)
@@ -38,7 +38,7 @@ def index():
                     flash(u'你已经报过名了，请勿多次点击！！！')
                 redirect(url_for('main.index'))
             elif form.name.data ==  requests.post(url, data=json.dumps(del_post_data), headers=headers).json()['student_name']:
-                if Student(stu_id=del_post_data['student_id'],name=form.name.data,qq=form.qq.data,stu_class=form.stu_class.data) is None:
+                if Student.query.filter_by(stu_id=del_post_data['student_id']) is None:
                     student = Student(stu_id=del_post_data['student_id'],name=form.name.data,qq=form.qq.data,stu_class=form.stu_class.data)
                     flash (u'报名成功！！！')
                     db.session.add(student)
