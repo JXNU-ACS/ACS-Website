@@ -1,4 +1,5 @@
-﻿from flask_wtf import Form
+#coding=utf-8
+from flask_wtf import Form
 from wtforms import StringField,SubmitField,SelectField
 from wtforms.validators import Required,Length
 from ..models import Student
@@ -9,4 +10,5 @@ class StudentForm(Form):
     stu_class = SelectField(u'班级',choices=HOUR_CHOICES)
     qq = StringField('QQ')
     submit = SubmitField(u'确认')
+
 

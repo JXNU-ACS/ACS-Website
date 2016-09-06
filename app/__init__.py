@@ -1,7 +1,6 @@
-
 from flask import Flask
 import MySQLdb
-from flask.ext.sqlalchemy import SQLAlchemy 
+from flask_sqlalchemy import SQLAlchemy
 from config import config
 from flask_bootstrap import Bootstrap
 bootsrap = Bootstrap()

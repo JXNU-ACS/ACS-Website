@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body 
     {
         margin:0px;
@@ -10,6 +11,13 @@ body
         padding: 0px;
         font: "Microsoft Yahei"; 
     }
+=======
+body {
+   margin:0px;
+   padding: 0px;
+}
+.section { margin:0px;padding: 0px;font: "Microsoft Yahei"; }
+>>>>>>> master
    *, *:after, *:before
         {
             -webkit-box-sizing: border-box;
@@ -29,6 +37,7 @@ body
             margin: 0 auto;
             padding: 0 1.875em 3.125em 1.875em;
         }
+<<<<<<< HEAD
 #menu
         {
             position: fixed;
@@ -52,6 +61,9 @@ body
             text-decoration: none;
             font:bold;
         }
+=======
+        
+>>>>>>> master
         /* COMPONENT.CSS */
         
         /* Made with http://icomoon.io/ 时间轴的线*/
@@ -142,15 +154,23 @@ body
             top: 0;
             margin: 0 0 0 -15px;
         }
+<<<<<<< HEAD
 .photo
         {
+=======
+.photo{
+>>>>>>> master
             width: 100%;
             min-height:20em;
             border-radius:20px;
             background-size: cover;
             background-repeat: no-repeat;
+<<<<<<< HEAD
             margin-bottom: 10px;
         }
+=======
+}
+>>>>>>> master
         
 
 .section4
@@ -160,7 +180,10 @@ body
             background-image: url(../simages/bg2.png);
             background-size: contain;
             padding-top:10px;
+<<<<<<< HEAD
             padding-bottom: 0px;
+=======
+>>>>>>> master
             background-repeat: no-repeat;
         }
 
@@ -169,6 +192,7 @@ body
         }
 .message
         { 
+<<<<<<< HEAD
             margin: 50px auto;
             padding-top: 40px;
             width: 700px;
@@ -176,6 +200,9 @@ body
             background: #fff;
             border-radius: 25px;
         }
+=======
+            margin:50px auto;padding-top:40px;width:700px;height:250px;background:#fff;border-radius: 25px;}
+>>>>>>> master
 .login1:before
         {
             content: '学号:'
@@ -190,7 +217,11 @@ body
         }
 .login4:before
         {
+<<<<<<< HEAD
             content: 'QQ:'
+=======
+            content: '联系方式:'
+>>>>>>> master
         }
 .login1
         {
@@ -233,6 +264,10 @@ body
         {
             background: transparent;
             border: none;
+<<<<<<< HEAD
+=======
+            width: 210px;
+>>>>>>> master
         }
 .login4
         {
@@ -247,6 +282,11 @@ body
         {
             background: transparent;
             border: none;
+<<<<<<< HEAD
+=======
+            width: 255px;
+
+>>>>>>> master
         }
 .login5
         {
@@ -258,11 +298,16 @@ body
             padding-top: 12px;
         }
 .submit
+<<<<<<< HEAD
         {   
+=======
+        {
+>>>>>>> master
             font-size:x-large;
             background: transparent;
             border: none;
         }
+<<<<<<< HEAD
 input[type~="submit"]:hover{
             background: green;
         }
@@ -284,3 +329,17 @@ table
             margin-left: auto;
             border: none; 
         } 
+=======
+.end
+        {
+            width:100%;
+            background: #dddddd;
+            padding: 0px 28%;
+            text-align: left;
+        }
+table
+        {
+            border: none;
+            
+        } 
+>>>>>>> master
