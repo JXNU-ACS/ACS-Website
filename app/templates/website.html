@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />    
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="format-detection" content="telephone=no"/>
+
+<title>fullPage.js </title>
+<link rel="stylesheet" href="../static/scss/scss.css">
+<link rel="stylesheet" href="../static/l-css/website.css">
+<link href="../static/l-css/bootstrap.min.css" rel="stylesheet">
+<script src="../static/sjs/jquery-1.8.3.min.js"></script>
+<script src="../static/sjs/jquery.slimscroll.js"></script>
+<script type="text/javascript" src="../static/sjs/scrolloverflow.min.js"></script>
+<script src="../static/sjs/jquery.fullPage.min.js"></script>
+
+<script>
+$(function(){
+	$('#ZT').fullpage({
+    scrollOverflow:true,
+    menu:'#menu',
+    achors:['page1','page2','page3','nav4'],
+    loopBottom:true 
+    });
+   });
+</script>
+
+</head>
+
+<body>
+<div id="ZT">
+    <div id="menu">
+    <ul>
+        <li data-menuanchor="page1"><a href="#page1">home</a></li>
+        <li data-menuanchor="page2"><a href="#page2">instruction</a></li>
+        <li data-menuanchor="page3"><a href="#page3">time toute</a></li>
+        <li data-menuanchor="nav4"><a href="#nav4">logn in</a></li>
+    </ul>
+    </div>
+    <div class="section homepage" id="page1">
+        <div class="overlay">
+            <div class="logo">
+            </div>
+            <div class="referance"> 两句话介绍协会，<br>比如一个*****的地方
+            </div>
+            <a href="#nav4" class="btn btn-default click ">立即报名</a>
+        </div>
+    </div>
+
+
+    <div class="section introduction" id="page2">
+        <div class="text">
+            <h1>协会组成介绍</h1>
+            balalalalalalalalalalalalala
+        </div>
+        <div class="container-fluid" style="width:860px;">
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="color-web" style="background-color:#BC7391">
+                        <div class="web" style="background-image:url(../static/l-images/1.png)"></div>
+                        <div class="type-web">
+                            <h2>网站组</h2>
+                            <span>Type<br>something************</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="color-hardware" style="background-color:#F8F8F8">
+                        <div class="hardware" style="background-image:url(../static/l-images/2.png)"></div>
+                        <div class="type-hardware">
+                            <h2>硬件组</h2>
+                            <span>Type<br>something************</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="color-algorithm" style="background-color:#EA7273">
+                        <div class="algorithm" style="background-image:url(../static/l-images/3.png)"></div>
+                        <div class="type-algorithm">
+                            <h2>算法组</h2>
+                            <span>Type<br>something************</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="color-software" style="background-color:#8DC9C1">
+                        <div class="software" style="background-image:url(../static/l-images/4.png"></div>
+                        <div class="type-software">
+                            <h2>软件组</h2>
+                            <span>Type<br>something************</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+
+    <div class="section section3" id="page3">
+        <div class="main">
+        <ul class="cbp_tmtimeline">
+            <li>
+                <div class="cbp_tmtime" >
+                    <span>11月</span> <span>2008</span></div>
+                <div class="cbp_tmicon cbp_tmicon-phone"></div>
+                <div class="cbp_tmlabel">
+            
+                    <div class="photo" style="background-image: url(../static/simages/zp1.jpg)"></div>
+                    <h2>2008</h2>2008年11月，江西师范大学ACM竞赛队第一次进入ACM-ICPC现场赛
+                </div>
+            </li>
+            <li>
+                <div class="cbp_tmtime" >
+                    <span>3月20号</span> <span>2013</span></div>
+                <div class="cbp_tmicon cbp_tmicon-phone"></div>
+                <div class="cbp_tmlabel">
+            
+                    <div class="photo" style="background-image: url(../static/simages/zp2.png)"></div>
+                    <h2>2013</h2>2013年3月20号，江西师范大学ACM协会正式成立，其前身为江西师范大学ACM竞赛队。
+                </div>
+            </li>
+            <li>
+                <div class="cbp_tmtime" >
+                    <span>7月11日</span> <span> </span></div>
+                <div class="cbp_tmicon cbp_tmicon-screen"></div>
+                <div class="cbp_tmlabel">
+                     <div class="photo" style="background-image: url(../static/simages/zp3.jpg)"></div>
+                    <h2>2013</h2>2013年7月11日，组织成员在北京大学参加第四届“蓝桥杯”决赛
+                </div>
+            </li>
+            <li>
+                <div class="cbp_tmtime" >
+                    <span>9月13日</span> <span> </span></div>
+                <div class="cbp_tmicon cbp_tmicon-phone"></div>
+                <div class="cbp_tmlabel">
+                    
+                     <div class="photo" style="background-image: url(../static/simages/zp4.jpg)"></div>
+                    <h2>2013</h2>2013年9月13日，协会举办第一次算法组招新宣传会
+                </div>
+            </li>
+            <li>
+                <div class="cbp_tmtime" >
+                    <span>11月</span> <span> </span></div>
+                <div class="cbp_tmicon cbp_tmicon-phone"></div>
+                <div class="cbp_tmlabel">
+                     <div class="photo" style="background-image: url(../static/simages/dzp5.jpg)"></div>
+                    <h2>2013</h2>2013年11月，正式更名“计算机科学协会”（Assocation of Computer Science）,ACM 竞赛队更改为协会算法组。
+                </div>
+            </li>
+            <li>
+                <div class="cbp_tmtime" >
+                    <span>4月25日</span> <span>2014</span>
+                </div>
+                <div class="cbp_tmicon cbp_tmicon-phone"></div>
+                <div class="cbp_tmlabel">
+                     <div class="photo" style="background-image: url(../static/simages/zp6.jpg)"></div>
+                    <h2>2014</h2>2014年4月25日，协会正式加入“CSDN”高校俱乐部
+                </div>
+            </li>
+
+            <li>
+                <div class="cbp_tmtime" >
+                    <span>5月10日</span> <span> </span>
+                </div>
+                <div class="cbp_tmicon cbp_tmicon-phone"></div>
+                <div class="cbp_tmlabel">
+                     <div class="photo" style="background-image: url(../static/simages/zp7.jpg)"></div>
+                    <h2>2014</h2>2014年5月10日，协会举办“校ACM程序设计竞赛”
+
+                </div>
+            </li>
+            <li>
+                <div class="cbp_tmtime" >
+                    <span>5月25日</span> <span> </span>
+                </div>
+                <div class="cbp_tmicon cbp_tmicon-phone"></div>
+                <div class="cbp_tmlabel">
+                     <div class="photo" style="background-image: url(../static/simages/zp8.jpg)"></div>
+                    <h2>2014</h2>2014年5月25日，参加第39届ACM-ICPC亚洲区西安邀请赛
+
+                </div>
+            </li>
+            <li>
+                <div class="cbp_tmtime" >
+                    <span>5月31日</span> <span> </span>
+                </div>
+                <div class="cbp_tmicon cbp_tmicon-phone"></div>
+                <div class="cbp_tmlabel">
+                     <div class="photo" style="background-image: url(../static/simages/zp9.jpg)"></div>
+                    <h2>2014</h2>2014年5月31日，组织参加“蓝桥杯”决赛
+                </div>
+            </li>
+            <li>
+                <div class="cbp_tmtime" >
+                    <span>10月12日</span> <span> </span>
+                </div>
+                <div class="cbp_tmicon cbp_tmicon-phone"></div>
+                <div class="cbp_tmlabel">
+                     <div class="photo" style="background-image: url(../static/simages/zp10.jpg)"></div>
+                    <h2>2014</h2>2014年10月12日，举办计算机信息工程学院首届网页设计大赛
+
+                </div>
+            </li>
+            <li>
+                <div class="cbp_tmtime" >
+                    <span>10月20日</span> <span> </span>
+                </div>
+                <div class="cbp_tmicon cbp_tmicon-phone"></div>
+                <div class="cbp_tmlabel">
+                     <div class="photo" style="background-image: url(../static/simages/dzp11.jpg)"></div>
+                    <h2>2014</h2>2014年10月20日，举办14级算法组招新宣传会
+                </div>
+            </li>
+            <li>
+                <div class="cbp_tmtime" >
+                    <span>10月25日</span> <span> </span>
+                </div>
+                <div class="cbp_tmicon cbp_tmicon-phone"></div>
+                <div class="cbp_tmlabel">
+                     <div class="photo" style="background-image: url(../static/simages/dzp12.jpg)"></div>
+                    <h2>2014</h2>2014年10月25日，参加39届ACM-ICPC亚洲区西安现场赛
+                </div>
+            </li>
+            <li>
+                <div class="cbp_tmtime" >
+                    <span>3月9日</span> <span>2015</span>
+                </div>
+                <div class="cbp_tmicon cbp_tmicon-phone"></div>
+                <div class="cbp_tmlabel">
+                     <div class="photo" style="background-image: url(../static/simages/zp13.jpg)"></div>
+                    <h2>2015</h2>2015年3月9日，举办协会网站组，软件组，硬件组联合招新宣传会，随后对报名的同学组织专业技能培训
+                </div>
+            </li>
+            <li>
+                <div class="cbp_tmtime" >
+                    <span>5月</span> <span> </span>
+                </div>
+                <div class="cbp_tmicon cbp_tmicon-phone"></div>
+                <div class="cbp_tmlabel">
+                     <div class="photo" style="background-image: url(../static/simages/dzp14.jpg)"></div>
+                    <h2>2015</h2>2015年5月，组织同学在在北京参加第六届“蓝桥杯”决赛
+                </div>
+            </li>
+            <li>
+                <div class="cbp_tmtime" >
+                    <span>5月16日</span> <span> </span>
+                </div>
+                <div class="cbp_tmicon cbp_tmicon-phone"></div>
+                <div class="cbp_tmlabel">
+                     <div class="photo" style="background-image: url(../static/simages/zp15.jpg)"></div>
+                    <h2>2015</h2>2015年5月16日，组织同学参加江西省第六届计算机作品大赛
+                </div>
+            </li>
+            <li>
+                <div class="cbp_tmtime" >
+                    <span>6月2日</span> <span> </span>
+                </div>
+                <div class="cbp_tmicon cbp_tmicon-phone"></div>
+                <div class="cbp_tmlabel">
+                     <div class="photo" style="background-image: url(../static/simages/dzp16.jpg)"></div>
+                    <h2>2015</h2>2015年6月2日，组织2015年校ACM程序设计竞赛
+                </div>
+            </li>
+            <li>
+                <div class="cbp_tmtime" >
+                    <span>8月</span> <span> </span>
+                </div>
+                <div class="cbp_tmicon cbp_tmicon-phone"></div>
+                <div class="cbp_tmlabel">
+                     <div class="photo" style="background-image: url(../static/simages/dzp17.jpg)"></div>
+                    <h2>2015</h2>2015年8月，组织算法组，网站组，机器人竞赛暑假集训
+                </div>
+            </li>
+            <li>
+                <div class="cbp_tmtime" >
+                    <span>9月</span> <span> </span>
+                </div>
+                <div class="cbp_tmicon cbp_tmicon-phone"></div>
+                <div class="cbp_tmlabel">
+                     <div class="photo" style="background-image: url(../static/simages/zp18.jpg)"></div>
+                    <h2>2015</h2>2015年9月，举办15级算法组招新宣传会
+                </div>
+            </li>
+            <li>
+                <div class="cbp_tmtime" >
+                    <span>11月</span> <span> </span>
+                </div>
+                <div class="cbp_tmicon cbp_tmicon-phone"></div>
+                <div class="cbp_tmlabel">
+                     <div class="photo" style="background-image: url(../static/simages/zp19.jpg)"></div>
+                    <h2>2015</h2>2015年11月，组织参加第三届江西省软件服务外包大赛，江西省第六届智能机器人大赛
+                </div>
+            </li>
+            <li>
+                <div class="cbp_tmtime" >
+                    <span>11月</span> <span> </span>
+                </div>
+                <div class="cbp_tmicon cbp_tmicon-phone"></div>
+                <div class="cbp_tmlabel">
+                     <div class="photo" style="background-image: url(../static/simages/zp20.jpg)"></div>
+                    <h2>2015</h2>2015年11月，组织协会成员参加第40届ACM-ICPC国际大学生程序设计竞赛北京赛区现场赛
+                </div>
+            </li>
+            <li>
+                <div class="cbp_tmtime" >
+                    <span>3月</span> <span>2016</span>
+                </div>
+                <div class="cbp_tmicon cbp_tmicon-phone"></div>
+                <div class="cbp_tmlabel">
+                     <div class="photo" style="background-image: url(../static/simages/dzp21.jpg)"></div>
+                    <h2>2016</h2>2016年3月，组织联合招新宣传会，并举办专业技能培训
+                </div>
+            </li>
+            <li>
+                <div class="cbp_tmtime" >
+                    <span>5月28日</span> <span> </span>
+                </div>
+                <div class="cbp_tmicon cbp_tmicon-phone"></div>
+                <div class="cbp_tmlabel">
+                     <div class="photo" style="background-image: url(../static/simages/dzp22.jpg)"></div>
+                    <h2>2016</h2>2016年5月28日，组织成员在北京参加第七届“蓝桥杯”决赛，参加的四名同学全部获得国家二等奖
+                </div>
+            </li>
+            <li>
+                <div class="cbp_tmtime" >
+                    <span>6月4日</span> <span> </span>
+                </div>
+                <div class="cbp_tmicon cbp_tmicon-phone"></div>
+                <div class="cbp_tmlabel">
+                     <div class="photo" style="background-image: url(../static/simages/dzp23.jpg)"></div>
+                    <h2>2016</h2>2016年6月4日，组织成员参加江西省第十一届计算机作品大赛
+                </div>
+            </li>
+            <li>
+                <div class="cbp_tmtime" >
+                    <span>8月</span> <span> </span>
+                </div>
+                <div class="cbp_tmicon cbp_tmicon-phone"></div>
+                <div class="cbp_tmlabel">
+                     <div class="photo" style="background-image: url(../static/simages/dzp24.jpg)"></div>
+                    <h2>2016</h2>2016年8月，组织算法组，网站组，机器人竞赛培训
+                </div>
+            </li>
+        </ul>
+        </div>
+    </div>
+
+    <div class="section section4 fp-auto-height" id="nav4" > 
+        <h2> 加入我们 </h2>
+        <p>we have a lot of good things what are worth of be have,so join us!</p>
+        <p>we have a lot of good things what are worth of be have,so join us!</p>
+        <div class="message">
+            {% for message in get_flashed_messages() %}
+                <div>{{ message }}</div>
+            {% endfor %}
+            <div class="login1">{{ form.stu_id(class="id")}}</div></p>
+            <div class="login2">{{ form.name(class="name")}}</div></p>
+            <div class="login3">{{ form.stu_class(class="class")}}</div></p>
+            <div class="login4">{{ form.qq(class="qq")}}</div></p>
+            <div class="login5">{{ form.submit(class="submit")}}</div></p>
+        </div>
+        <div class="section fp-auto-height">
+            <div class="end">
+            <table>
+                <tr>
+                    <td>版权所有：江西师范大学ACS协会 &nbsp&nbsp&nbsp</td>
+                    <td>邮箱：12435365</td>
+                <tr>
+                    <td>法律声明：bcvnfgkh</td>
+                    <td>协会联系方式：1243235</td>
+                </tr>
+                <tr>
+                    <td>备案信息：xjdhcfghdgf</td>
+                    <td>协会地址：先骕楼</td>
+                </tr>
+            </table>
+        </div>
+        </div>
+    </div>  
+        
+</div>
+   
+</body>
+</html>
