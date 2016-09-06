@@ -34,7 +34,7 @@ def index():
                     student = Student(stu_id=add_post_data['student_id'],name=form.name.data,qq=form.qq.data,stu_class=form.stu_class.data)
                     flash (u'报名成功！！！')
                     db.session.add(student)
-                else: 
+                else:
                     flash(u'你已经报过名了，请勿多次点击！！！')
                 redirect(url_for('main.index'))
             elif form.name.data ==  requests.post(url, data=json.dumps(del_post_data), headers=headers).json()['student_name']:
@@ -52,6 +52,5 @@ def index():
             flash(u'你已经报过名了，请勿多次点击！！！')
         redirect(url_for('main.index'))
     return render_template('website.html',form=form)
-
 
 

@@ -11,23 +11,35 @@
 <link rel="stylesheet" href="../static/scss/scss.css">
 <link rel="stylesheet" href="../static/l-css/website.css">
 <link href="../static/l-css/bootstrap.min.css" rel="stylesheet">
-
 <script src="../static/sjs/jquery-1.8.3.min.js"></script>
-<script src="../static/sjs/jquery.fullPage.min.js"></script>
 <script src="../static/sjs/jquery.slimscroll.js"></script>
+<script type="text/javascript" src="../static/sjs/scrolloverflow.min.js"></script>
+<script src="../static/sjs/jquery.fullPage.min.js"></script>
+
 <script>
 $(function(){
 	$('#ZT').fullpage({
-    scrollOverflow:true
-	});
-});
+    scrollOverflow:true,
+    menu:'#menu',
+    achors:['page1','page2','page3','nav4'],
+    loopBottom:true
+    });
+   });
 </script>
+
 </head>
 
 <body>
 <div id="ZT">
-
-    <div class="section homepage">
+    <div id="menu">
+    <ul>
+        <li data-menuanchor="page1"><a href="#page1">home</a></li>
+        <li data-menuanchor="page2"><a href="#page2">instruction</a></li>
+        <li data-menuanchor="page3"><a href="#page3">time toute</a></li>
+        <li data-menuanchor="nav4"><a href="#nav4">logn in</a></li>
+    </ul>
+    </div>
+    <div class="section homepage" id="page1">
         <div class="overlay">
             <div class="logo">
             </div>
@@ -38,7 +50,7 @@ $(function(){
     </div>
 
 
-    <div class="section introduction">
+    <div class="section introduction" id="page2">
         <div class="text">
             <h1>协会组成介绍</h1>
             balalalalalalalalalalalalala
@@ -84,9 +96,9 @@ $(function(){
             </div>
         </div>
     </div>
- 
 
-    <div class="section section3">
+
+    <div class="section section3" id="page3">
         <div class="main">
         <ul class="cbp_tmtimeline">
             <li>
@@ -94,7 +106,7 @@ $(function(){
                     <span>11月</span> <span>2008</span></div>
                 <div class="cbp_tmicon cbp_tmicon-phone"></div>
                 <div class="cbp_tmlabel">
-            
+
                     <div class="photo" style="background-image: url(../static/simages/zp1.jpg)"></div>
                     <h2>2008</h2>2008年11月，江西师范大学ACM竞赛队第一次进入ACM-ICPC现场赛
                 </div>
@@ -104,7 +116,7 @@ $(function(){
                     <span>3月20号</span> <span>2013</span></div>
                 <div class="cbp_tmicon cbp_tmicon-phone"></div>
                 <div class="cbp_tmlabel">
-            
+
                     <div class="photo" style="background-image: url(../static/simages/zp2.png)"></div>
                     <h2>2013</h2>2013年3月20号，江西师范大学ACM协会正式成立，其前身为江西师范大学ACM竞赛队。
                 </div>
@@ -123,7 +135,7 @@ $(function(){
                     <span>9月13日</span> <span> </span></div>
                 <div class="cbp_tmicon cbp_tmicon-phone"></div>
                 <div class="cbp_tmlabel">
-                    
+
                      <div class="photo" style="background-image: url(../static/simages/zp4.jpg)"></div>
                     <h2>2013</h2>2013年9月13日，协会举办第一次算法组招新宣传会
                 </div>
@@ -335,7 +347,7 @@ $(function(){
         </div>
     </div>
 
-    <div class="section section4" id="nav4">   
+    <div class="section section4 fp-auto-height" id="nav4" >
         <h2> 加入我们 </h2>
         <p>we have a lot of good things what are worth of be have,so join us!</p>
         <p>we have a lot of good things what are worth of be have,so join us!</p>
@@ -343,20 +355,17 @@ $(function(){
             {% for message in get_flashed_messages() %}
                 <div>{{ message }}</div>
             {% endfor %}
-            <form method="post">
-                                {{ form.hidden_tag() }}
             <div class="login1">{{ form.stu_id(class="id")}}</div></p>
             <div class="login2">{{ form.name(class="name")}}</div></p>
             <div class="login3">{{ form.stu_class(class="class")}}</div></p>
-            <div class="login4">{{ form.qq(class="qq",placeholder='QQ或电话号码')}}</div></p>
+            <div class="login4">{{ form.qq(class="qq")}}</div></p>
             <div class="login5">{{ form.submit(class="submit")}}</div></p>
-            </form>
         </div>
-
-        <div class="end">
+        <div class="section fp-auto-height">
+            <div class="end">
             <table>
                 <tr>
-                    <td>版权所有：江西师范大学ACS协会</td>
+                    <td>版权所有：江西师范大学ACS协会 &nbsp&nbsp&nbsp</td>
                     <td>邮箱：12435365</td>
                 <tr>
                     <td>法律声明：bcvnfgkh</td>
@@ -368,7 +377,9 @@ $(function(){
                 </tr>
             </table>
         </div>
+        </div>
     </div>
+
 </div>
    
 </body>
