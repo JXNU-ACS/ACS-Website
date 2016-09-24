@@ -7,24 +7,22 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 <meta name="format-detection" content="telephone=no"/>
 
-<title>fullPage.js </title>
+
 <link rel="stylesheet" href="../static/scss/scss.css">
 <link rel="stylesheet" href="../static/l-css/website.css">
 <link href="../static/l-css/bootstrap.min.css" rel="stylesheet">
-<script src="../static/sjs/jquery-1.8.3.min.js"></script>
-<script src="../static/sjs/jquery.slimscroll.js"></script>
-<script type="text/javascript" src="../static/sjs/scrolloverflow.min.js"></script>
-<script src="../static/sjs/jquery.fullPage.min.js"></script>
+
 
 <script>
-$(function(){
+/*$(function(){
 	$('#ZT').fullpage({
     scrollOverflow:true,
     menu:'#menu',
-    achors:['page1','page2','page3','nav4'],
-    loopBottom:true
+    achors:['page1','page2','page3','nav'],
+    loopBottom:true ,
+    navigation: true
     });
-   });
+   });*/
 </script>
 
 </head>
@@ -33,13 +31,13 @@ $(function(){
 <div id="ZT">
     <div id="menu">
     <ul>
-        <li data-menuanchor="page1"><a href="#page1">home</a></li>
-        <li data-menuanchor="page2"><a href="#page2">instruction</a></li>
-        <li data-menuanchor="page3"><a href="#page3">time toute</a></li>
-        <li data-menuanchor="nav4"><a href="#nav4">logn in</a></li>
+        <li data-menuanchor="page1"><a href="#page1">首页</a></li>
+        <li data-menuanchor="page2"><a href="#page2">介绍</a></li>
+        <li data-menuanchor="page3"><a href="#page3">时间线</a></li>
+        <li data-menuanchor="nav4"><a href="#nav4">报名</a></li>
     </ul>
     </div>
-    <div class="section homepage" id="page1">
+    <div class="homepage" id="page1">
         <div class="overlay">
             <div class="logo">
             </div>
@@ -50,7 +48,7 @@ $(function(){
     </div>
 
 
-    <div class="section introduction" id="page2">
+    <div class="introduction" id="page2">
         <div class="text">
             <h1>协会组成介绍</h1>
             balalalalalalalalalalalalala
@@ -96,9 +94,9 @@ $(function(){
             </div>
         </div>
     </div>
+ 
 
-
-    <div class="section section3" id="page3">
+    <div class="section3" id="page3">
         <div class="main">
         <ul class="cbp_tmtimeline">
             <li>
@@ -106,7 +104,7 @@ $(function(){
                     <span>11月</span> <span>2008</span></div>
                 <div class="cbp_tmicon cbp_tmicon-phone"></div>
                 <div class="cbp_tmlabel">
-
+            
                     <div class="photo" style="background-image: url(../static/simages/zp1.jpg)"></div>
                     <h2>2008</h2>2008年11月，江西师范大学ACM竞赛队第一次进入ACM-ICPC现场赛
                 </div>
@@ -116,7 +114,7 @@ $(function(){
                     <span>3月20号</span> <span>2013</span></div>
                 <div class="cbp_tmicon cbp_tmicon-phone"></div>
                 <div class="cbp_tmlabel">
-
+            
                     <div class="photo" style="background-image: url(../static/simages/zp2.png)"></div>
                     <h2>2013</h2>2013年3月20号，江西师范大学ACM协会正式成立，其前身为江西师范大学ACM竞赛队。
                 </div>
@@ -135,7 +133,7 @@ $(function(){
                     <span>9月13日</span> <span> </span></div>
                 <div class="cbp_tmicon cbp_tmicon-phone"></div>
                 <div class="cbp_tmlabel">
-
+                    
                      <div class="photo" style="background-image: url(../static/simages/zp4.jpg)"></div>
                     <h2>2013</h2>2013年9月13日，协会举办第一次算法组招新宣传会
                 </div>
@@ -145,7 +143,7 @@ $(function(){
                     <span>11月</span> <span> </span></div>
                 <div class="cbp_tmicon cbp_tmicon-phone"></div>
                 <div class="cbp_tmlabel">
-                     <div class="photo" style="background-image: url(../static/simages/dzp5.jpg)"></div>
+                     <div class="photo" style="background-image: url(../static/simages/zp5.jpg)"></div>
                     <h2>2013</h2>2013年11月，正式更名“计算机科学协会”（Assocation of Computer Science）,ACM 竞赛队更改为协会算法组。
                 </div>
             </li>
@@ -203,23 +201,14 @@ $(function(){
 
                 </div>
             </li>
-            <li>
-                <div class="cbp_tmtime" >
-                    <span>10月20日</span> <span> </span>
-                </div>
-                <div class="cbp_tmicon cbp_tmicon-phone"></div>
-                <div class="cbp_tmlabel">
-                     <div class="photo" style="background-image: url(../static/simages/dzp11.jpg)"></div>
-                    <h2>2014</h2>2014年10月20日，举办14级算法组招新宣传会
-                </div>
-            </li>
+            
             <li>
                 <div class="cbp_tmtime" >
                     <span>10月25日</span> <span> </span>
                 </div>
                 <div class="cbp_tmicon cbp_tmicon-phone"></div>
                 <div class="cbp_tmlabel">
-                     <div class="photo" style="background-image: url(../static/simages/dzp12.jpg)"></div>
+                     <div class="photo" style="background-image: url(../static/simages/zp12.jpg)"></div>
                     <h2>2014</h2>2014年10月25日，参加39届ACM-ICPC亚洲区西安现场赛
                 </div>
             </li>
@@ -231,16 +220,6 @@ $(function(){
                 <div class="cbp_tmlabel">
                      <div class="photo" style="background-image: url(../static/simages/zp13.jpg)"></div>
                     <h2>2015</h2>2015年3月9日，举办协会网站组，软件组，硬件组联合招新宣传会，随后对报名的同学组织专业技能培训
-                </div>
-            </li>
-            <li>
-                <div class="cbp_tmtime" >
-                    <span>5月</span> <span> </span>
-                </div>
-                <div class="cbp_tmicon cbp_tmicon-phone"></div>
-                <div class="cbp_tmlabel">
-                     <div class="photo" style="background-image: url(../static/simages/dzp14.jpg)"></div>
-                    <h2>2015</h2>2015年5月，组织同学在在北京参加第六届“蓝桥杯”决赛
                 </div>
             </li>
             <li>
@@ -259,7 +238,7 @@ $(function(){
                 </div>
                 <div class="cbp_tmicon cbp_tmicon-phone"></div>
                 <div class="cbp_tmlabel">
-                     <div class="photo" style="background-image: url(../static/simages/dzp16.jpg)"></div>
+                     <div class="photo" style="background-image: url(../static/simages/zp16.jpg)"></div>
                     <h2>2015</h2>2015年6月2日，组织2015年校ACM程序设计竞赛
                 </div>
             </li>
@@ -269,7 +248,7 @@ $(function(){
                 </div>
                 <div class="cbp_tmicon cbp_tmicon-phone"></div>
                 <div class="cbp_tmlabel">
-                     <div class="photo" style="background-image: url(../static/simages/dzp17.jpg)"></div>
+                     <div class="photo" style="background-image: url(../static/simages/zp17.png)"></div>
                     <h2>2015</h2>2015年8月，组织算法组，网站组，机器人竞赛暑假集训
                 </div>
             </li>
@@ -309,7 +288,7 @@ $(function(){
                 </div>
                 <div class="cbp_tmicon cbp_tmicon-phone"></div>
                 <div class="cbp_tmlabel">
-                     <div class="photo" style="background-image: url(../static/simages/dzp21.jpg)"></div>
+                     <div class="photo" style="background-image: url(../static/simages/zp21.png)"></div>
                     <h2>2016</h2>2016年3月，组织联合招新宣传会，并举办专业技能培训
                 </div>
             </li>
@@ -319,7 +298,7 @@ $(function(){
                 </div>
                 <div class="cbp_tmicon cbp_tmicon-phone"></div>
                 <div class="cbp_tmlabel">
-                     <div class="photo" style="background-image: url(../static/simages/dzp22.jpg)"></div>
+                     <div class="photo" style="background-image: url(../static/simages/zp22.jpg)"></div>
                     <h2>2016</h2>2016年5月28日，组织成员在北京参加第七届“蓝桥杯”决赛，参加的四名同学全部获得国家二等奖
                 </div>
             </li>
@@ -329,7 +308,7 @@ $(function(){
                 </div>
                 <div class="cbp_tmicon cbp_tmicon-phone"></div>
                 <div class="cbp_tmlabel">
-                     <div class="photo" style="background-image: url(../static/simages/dzp23.jpg)"></div>
+                     <div class="photo" style="background-image: url(../static/simages/zp23.jpg)"></div>
                     <h2>2016</h2>2016年6月4日，组织成员参加江西省第十一届计算机作品大赛
                 </div>
             </li>
@@ -339,7 +318,7 @@ $(function(){
                 </div>
                 <div class="cbp_tmicon cbp_tmicon-phone"></div>
                 <div class="cbp_tmlabel">
-                     <div class="photo" style="background-image: url(../static/simages/dzp24.jpg)"></div>
+                     <div class="photo" style="background-image: url(../static/simages/zp24.jpg)"></div>
                     <h2>2016</h2>2016年8月，组织算法组，网站组，机器人竞赛培训
                 </div>
             </li>
@@ -347,7 +326,7 @@ $(function(){
         </div>
     </div>
 
-    <div class="section section4 fp-auto-height" id="nav4" >
+    <div class="section4 fp-auto-height" id="nav4"> 
         <h2> 加入我们 </h2>
         <p>we have a lot of good things what are worth of be have,so join us!</p>
         <p>we have a lot of good things what are worth of be have,so join us!</p>
@@ -355,13 +334,18 @@ $(function(){
             {% for message in get_flashed_messages() %}
                 <div>{{ message }}</div>
             {% endfor %}
+             <form method="post">
+            <div class="login">
+            {{ form.hidden_tag() }}
             <div class="login1">{{ form.stu_id(class="id")}}</div></p>
             <div class="login2">{{ form.name(class="name")}}</div></p>
             <div class="login3">{{ form.stu_class(class="class")}}</div></p>
             <div class="login4">{{ form.qq(class="qq")}}</div></p>
+            </div>
             <div class="login5">{{ form.submit(class="submit")}}</div></p>
+            </form>
         </div>
-        <div class="section fp-auto-height">
+        <div class="fp-auto-height">
             <div class="end">
             <table>
                 <tr>
@@ -378,8 +362,8 @@ $(function(){
             </table>
         </div>
         </div>
-    </div>
-
+    </div>  
+        
 </div>
    
 </body>

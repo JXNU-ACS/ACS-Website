@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 body 
     {
         margin:0px;
@@ -11,13 +10,6 @@ body
         padding: 0px;
         font: "Microsoft Yahei"; 
     }
-=======
-body {
-   margin:0px;
-   padding: 0px;
-}
-.section { margin:0px;padding: 0px;font: "Microsoft Yahei"; }
->>>>>>> master
    *, *:after, *:before
         {
             -webkit-box-sizing: border-box;
@@ -37,7 +29,6 @@ body {
             margin: 0 auto;
             padding: 0 1.875em 3.125em 1.875em;
         }
-<<<<<<< HEAD
 #menu
         {
             position: fixed;
@@ -51,19 +42,17 @@ body {
             float: left;
             list-style: none;
         }
-.#menu ul li a:link{
-            list-style:none; 
+#menu ul li a:link{
+            list-style:none;
             text-decoration: none;
-            font:bold;                 
+            font:bold;   
+            color: red; 
         }
 #menu ul li a:hover{
             list-style:none; 
             text-decoration: none;
             font:bold;
         }
-=======
-        
->>>>>>> master
         /* COMPONENT.CSS */
         
         /* Made with http://icomoon.io/ 时间轴的线*/
@@ -154,23 +143,15 @@ body {
             top: 0;
             margin: 0 0 0 -15px;
         }
-<<<<<<< HEAD
 .photo
         {
-=======
-.photo{
->>>>>>> master
             width: 100%;
             min-height:20em;
             border-radius:20px;
             background-size: cover;
             background-repeat: no-repeat;
-<<<<<<< HEAD
             margin-bottom: 10px;
         }
-=======
-}
->>>>>>> master
         
 
 .section4
@@ -180,19 +161,18 @@ body {
             background-image: url(../simages/bg2.png);
             background-size: contain;
             padding-top:10px;
-<<<<<<< HEAD
             padding-bottom: 0px;
-=======
->>>>>>> master
             background-repeat: no-repeat;
         }
 
-
+.login
+        {
+            text-align: left;
+        }
 
         }
 .message
         { 
-<<<<<<< HEAD
             margin: 50px auto;
             padding-top: 40px;
             width: 700px;
@@ -200,28 +180,21 @@ body {
             background: #fff;
             border-radius: 25px;
         }
-=======
-            margin:50px auto;padding-top:40px;width:700px;height:250px;background:#fff;border-radius: 25px;}
->>>>>>> master
 .login1:before
         {
-            content: '学号:'
+            content: '学号:';
         }
 .login2:before
         {
-            content: '姓名:'
+            content: '姓名:';
         }
 .login3:before
         {
-            content: '班级:'
+            content: '班级:';
         }
 .login4:before
         {
-<<<<<<< HEAD
-            content: 'QQ:'
-=======
-            content: '联系方式:'
->>>>>>> master
+            content: 'QQ:';
         }
 .login1
         {
@@ -231,6 +204,8 @@ body {
             background: #dddddd;
             margin:20px auto;
             padding-top: 12px;
+            padding-left: 80px;
+
         }
 .id
         {
@@ -245,6 +220,8 @@ body {
             background: #dddddd;
             margin:20px auto;
             padding-top: 12px;
+            padding-left: 80px;
+            
         }
 .name
         {
@@ -259,15 +236,12 @@ body {
             background: #dddddd;
             margin:20px auto;
             padding-top: 12px;
+            padding-left: 80px;
         }
 .class
         {
             background: transparent;
             border: none;
-<<<<<<< HEAD
-=======
-            width: 210px;
->>>>>>> master
         }
 .login4
         {
@@ -277,16 +251,12 @@ body {
             background: #dddddd;
             margin:20px auto;
             padding-top: 12px;
+            padding-left: 80px;
         }
 .qq
         {
             background: transparent;
             border: none;
-<<<<<<< HEAD
-=======
-            width: 255px;
-
->>>>>>> master
         }
 .login5
         {
@@ -298,16 +268,11 @@ body {
             padding-top: 12px;
         }
 .submit
-<<<<<<< HEAD
         {   
-=======
-        {
->>>>>>> master
             font-size:x-large;
             background: transparent;
             border: none;
         }
-<<<<<<< HEAD
 input[type~="submit"]:hover{
             background: green;
         }
@@ -315,31 +280,21 @@ input[type~="submit"]:hover{
         {
             width:100%;
             height: 150px;
-            background: #dddddd;
-            padding: 0px 28%;
+            background: #333;
+            padding: 40px 28%;
             text-align: left;
-            padding-top: 30px;
-            position: absolute;
+            /*position: absolute;
             bottom: 0px;
-            margin: 0px;
+            margin: 0px;*/
         }
 table
         {
             margin-right: auto;
             margin-left: auto;
             border: none; 
-        } 
-=======
-.end
-        {
-            width:100%;
-            background: #dddddd;
-            padding: 0px 28%;
-            text-align: left;
         }
-table
-        {
-            border: none;
-            
-        } 
->>>>>>> master
+table td{
+    font-size: 14px;
+    color: #605b55;
+
+}
