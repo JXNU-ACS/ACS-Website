@@ -33,7 +33,7 @@
     <ul>
         <li data-menuanchor="page1"><a href="#page1">首页</a></li>
         <li data-menuanchor="page2"><a href="#page2">介绍</a></li>
-        <li data-menuanchor="page3"><a href="#page3">时间线</a></li>
+        <li data-menuanchor="page3"><a href="#page3">历史</a></li>
         <li data-menuanchor="nav4"><a href="#nav4">报名</a></li>
     </ul>
     </div>
@@ -41,7 +41,7 @@
         <div class="overlay">
             <div class="logo">
             </div>
-            <div class="referance"> 两句话介绍协会，<br>比如一个*****的地方
+            <div class="referance">学习、思考、分享。<br>你的追梦之路有我们相伴
             </div>
             <a href="#nav4" class="btn btn-default click ">立即报名</a>
         </div>
@@ -51,7 +51,7 @@
     <div class="introduction" id="page2">
         <div class="text">
             <h1>协会组成介绍</h1>
-            balalalalalalalalalalalalala
+            协会由四个兴趣小组构成，分别为网站组、硬件组、算法组和软件组
         </div>
         <div class="container-fluid" style="width:860px;">
             <div class="row">
@@ -60,7 +60,7 @@
                         <div class="web" style="background-image:url(../static/l-images/1.png)"></div>
                         <div class="type-web">
                             <h2>网站组</h2>
-                            <span>Type<br>something************</span>
+                            <span>UE用户体验设计、网站前端开发<br>Django flask、Web开发</span>
                         </div>
                     </div>
                 </div>
@@ -69,7 +69,7 @@
                         <div class="hardware" style="background-image:url(../static/l-images/2.png)"></div>
                         <div class="type-hardware">
                             <h2>硬件组</h2>
-                            <span>Type<br>something************</span>
+                            <span>单片机开发、基于Linux<br>嵌入式开发、Raspherry pi开发</span>
                         </div>
                     </div>
                 </div>
@@ -78,7 +78,7 @@
                         <div class="algorithm" style="background-image:url(../static/l-images/3.png)"></div>
                         <div class="type-algorithm">
                             <h2>算法组</h2>
-                            <span>Type<br>something************</span>
+                            <span>ACS-ICPC竞赛、计算机视觉<br>算法学习</span>
                         </div>
                     </div>
                 </div>
@@ -87,7 +87,7 @@
                         <div class="software" style="background-image:url(../static/l-images/4.png"></div>
                         <div class="type-software">
                             <h2>软件组</h2>
-                            <span>Type<br>something************</span>
+                            <span>安卓应用开发、PC软件开发<br>JAVAEE企业应用</span>
                         </div>
                     </div>
                 </div>
@@ -328,15 +328,15 @@
 
     <div class="section4 fp-auto-height" id="nav4"> 
         <h2> 加入我们 </h2>
-        <p>we have a lot of good things what are worth of be have,so join us!</p>
-        <p>we have a lot of good things what are worth of be have,so join us!</p>
+        <p>We have a lot of good things what are worth of be have,so join us!</p>
+        <p>This is the beginning of your dream！</P>
         <div class="message">
             {% for message in get_flashed_messages() %}
                 <div>{{ message }}</div>
             {% endfor %}
-             <form method="post">
             <div class="login">
-            {{ form.hidden_tag() }}
+                <form method='post'>
+                    {{ form.hidden_tag() }}
             <div class="login1">{{ form.stu_id(class="id")}}</div></p>
             <div class="login2">{{ form.name(class="name")}}</div></p>
             <div class="login3">{{ form.stu_class(class="class")}}</div></p>
@@ -350,20 +350,17 @@
             <table>
                 <tr>
                     <td>版权所有：江西师范大学ACS协会 &nbsp&nbsp&nbsp</td>
-                    <td>邮箱：12435365</td>
-                <tr>
-                    <td>法律声明：bcvnfgkh</td>
-                    <td>协会联系方式：1243235</td>
+                    <td>邮箱：jxnuacs@qq.com</td>
                 </tr>
+                    <br>
                 <tr>
-                    <td>备案信息：xjdhcfghdgf</td>
-                    <td>协会地址：先骕楼</td>
+                    <td>协会qq：1669653923</td>
+                    <td>协会地址：江西师范大学先骕楼X4308</td>
                 </tr>
             </table>
+            </div>
         </div>
-        </div>
-    </div>  
-        
+    </div>      
 </div>
    
 </body>

@@ -24,7 +24,7 @@ body
 .clearfix:after{clear: both;}
 .main
         {
-            width: 90%;
+            width: 1000px;
             max-width: 69em;
             margin: 0 auto;
             padding: 0 1.875em 3.125em 1.875em;
@@ -33,9 +33,9 @@ body
         {
             position: fixed;
             top: 8px;
-            right: 6px;
+            right: 2px;
             background: transparent;
-            width: 10%;
+            width: 6%;
         }
 #menu ul
         {
@@ -46,7 +46,6 @@ body
             list-style:none;
             text-decoration: none;
             font:bold;   
-            color: red; 
         }
 #menu ul li a:hover{
             list-style:none; 
