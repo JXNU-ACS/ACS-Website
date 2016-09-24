@@ -16,6 +16,9 @@ def index():
         if form.stu_id.data =='' or form.name.data =='' or form.qq.data =='':
             flash(u'请填写完整信息！！！')
             return redirect(url_for('main.index'))
+        if not isinstance(form.stu_id.data,int) or not isinstance(form.qq.data,int):
+            flash(u'您的信息类型不合法')
+            return redirect(url_for('main.index'))
         student = Student.query.filter_by(stu_id=form.stu_id.data).first()
         if student is  None:
             url = "http://www.jxnugo.com/api/is_jxnu_student"
