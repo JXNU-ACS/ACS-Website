@@ -88,3 +88,7 @@ ENV/
 # Rope project settings
 .ropeproject
 config.py
+
+#mac
+.DS_Store
+*.pyc
