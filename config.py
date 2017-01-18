@@ -16,7 +16,7 @@ class Config:
 class DevelopmentConfig(Config):
     DEBUG = True
     SQLALCHEMY_DATABASE_URI = os.environ.get('DEV_DATABASE_URL') or \
-    'mysql://root:1234@localhost:3306/acsk?charset=utf8'
+    'mysql+pymysql://root:password@localhost:3306/acs?charset=utf8' # config your db url
 
 config = {
     'default': DevelopmentConfig
