@@ -92,3 +92,6 @@ config.py
 #mac
 .DS_Store
 *.pyc
+
+#IDE
+.idea
