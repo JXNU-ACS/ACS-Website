@@ -5,3 +5,4 @@ Flask-SQLAlchemy==2.1
 Flask-WTF==0.14.2
 requests==2.12.4
 mysql-python==1.2.3
+PyMySQL==0.7.11
