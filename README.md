@@ -2,7 +2,7 @@
 the website of JXNU-ACS
 
 
-#环境准备
+# 环境准备
 配置
 config.py
 
