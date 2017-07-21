@@ -12,11 +12,11 @@ window.acs = {
     }
   },
   setNavBg: function(jqObj){
-    if(document.body.scrollTop > (innerHeight-100)){
+    if($(document).scrollTop() > (innerHeight-100)){
       jqObj.addClass("navbar-black");
     }
     $(document).scroll(function(){
-      if(document.body.scrollTop > (innerHeight-100)){
+      if($(document).scrollTop() > (innerHeight-100)){
         jqObj.addClass("navbar-black");
       }else{
         jqObj.removeClass("navbar-black");
