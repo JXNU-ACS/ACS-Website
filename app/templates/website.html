@@ -1,390 +1,213 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport"
-          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-    <meta name="format-detection" content="telephone=no"/>
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
-
-    <link rel="stylesheet" href="../static/scss/scss.css">
-    <link rel="stylesheet" href="../static/l-css/website.css">
-    <link href="{{ url_for('static', filename='l-css/bootstrap.min.css') }}" rel="stylesheet">
-
-    <script src="{{ url_for('static', filename='sjs/jquery-1.8.3.min.js') }}"></script>
-    <script>
-        /*$(function(){
-         $('#ZT').fullpage({
-         scrollOverflow:true,
-         menu:'#menu',
-         achors:['page1','page2','page3','nav'],
-         loopBottom:true ,
-         navigation: true
-         });
-         });*/
-    </script>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="csrf-token" content="{{ csrf_token() }}">
+  <link rel="stylesheet" href="../static/css/index.css">
+  <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../static/css/material-photo-gallery.css">
 </head>
 
-<body>
-<div id="ZT">
-    <div id="menu">
-        <ul>
-            <li data-menuanchor="page1"><a href="#page1">首页</a></li>
-            <li data-menuanchor="page2"><a href="#page2">介绍</a></li>
-            <li data-menuanchor="page3"><a href="#page3">历史</a></li>
-            <li data-menuanchor="nav4"><a href="#nav4">报名</a></li>
-        </ul>
+<body class="index">
+  <div class="container-fluid">
+    <nav class="navbar navbar-default navbar-transparent navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img class="navbar-logo" src="../static/images/logo.png" width="99">
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="nav-anchor" data-href="#b2">acs简介</a></li>
+            <li><a class="nav-anchor" data-href="#b3">acs历史</a></li>
+            <li><a class="nav-anchor" data-href="#b4">加入我们</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div class="row index-display block-1">
+      <div class="container">
+        <div class="item-block-1">
+          <div class="title title-sm hidden-xs">
+            <h1>学习  思考  分享</h1>
+            <h2>你的追梦之路有我们相伴</h2>
+          </div>
+          <div class="title title-xs visible-xs-block">
+            <h1>学习  思考  分享</h1>
+            <h2>你的追梦之路<br>
+              有我们相伴</h2>
+          </div>
+          <a type="button" class="btn btn-default">加入我们</a>
+          <div class="chilun-anim">
+          <div class="chilun0"></div>
+          <div class="chilun1"></div>
+          <div class="chilun2"></div>
+          <div class="chilun3"></div>
+          <div class="chilun4"></div>
+          <div class="chilun5"></div>
+          </div>
+        </div>
+        
+      </div>
     </div>
-    <div class="homepage" id="page1">
-        <div class="overlay">
-            <div class="logo">
-            </div>
-            <div class="referance">学习、思考、分享<br>你的追梦之路有我们相伴
-            </div>
-            <a href="#nav4" class="btn btn-default click ">我要加入</a>
+    <div id="b2" class="row index-display block-2">
+      <div class="container item-block-2">
+        <div class="row title">
+          <i></i><h3>我们是什么组织？</h3><i></i>
         </div>
+        <div class="row p">
+          <p>江西师范大学计算机科学协会(ACS associationof computer science)创建于2013年,其前身是江西师范大学ACM协会现挂靠计算机信息工程学院。</br>
+协会下设置4个兴趣小组，分别为算法组、网站组、软件组、硬件组，主要开展计算机专业相关的知识学习和技术交流活动。</p>
+        </div>
+        <div class="row group">
+          <div class="col-md-3 col-sm-6">
+            <div class="icon">
+              <img src="../static/images/icon1.png">
+            </div>
+            <div class="intraduce">
+              <h4>网站组</h4>
+              <p>
+                UE用户体验设计、网页前端</br>Python Web开发
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="icon">
+              <img src="../static/images/icon2.png">
+            </div>
+            <div class="intraduce">
+              <h4>硬件组</h4>
+              <p>
+                单片机<br>Linux嵌入式开发
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="icon">
+              <img src="../static/images/icon3.png">
+            </div>
+            <div class="intraduce">
+              <h4>算法组</h4>
+              <p>
+                ACM-ICPC竞赛</br>计算机视觉算法学习
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="icon">
+              <img src="../static/images/icon4.png">
+            </div>
+            <div class="intraduce">
+              <h4>软件组</h4>
+              <p>
+                Android应用开发、PC软件</br>JAVAEE企业应用开发
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-
-    <div class="introduction" id="page2">
-        <div class="text">
-            <h1>协会概况</h1>
-            协会由四个兴趣小组构成，分别为算法组、网站组、硬件组和软件组
+    <div id="b3" class="row index-display block-2">
+      <div class="item-block-2">
+        <div class="row title">
+          <i></i><h3>ACS协会历史</h3><i></i>
         </div>
-        <div class="container-fluid" style="width:860px;">
-            <div class="row">
-                <div class="col-xs-6">
-                    <div class="color-web" style="background-color:#BC7391">
-                        <div class="web" style="background-image:url(../static/l-images/1.png)"></div>
-                        <div class="type-web">
-                            <h2>网站组</h2>
-                            <span>UE用户体验设计、网页前端<br>Python Web开发</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6">
-                    <div class="color-hardware" style="background-color:#F8F8F8">
-                        <div class="hardware" style="background-image:url(../static/l-images/2.png)"></div>
-                        <div class="type-hardware">
-                            <h2>硬件组</h2>
-                            <span>单片机、Linux嵌入式开发</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6">
-                    <div class="color-algorithm" style="background-color:#EA7273">
-                        <div class="algorithm" style="background-image:url(../static/l-images/3.png)"></div>
-                        <div class="type-algorithm">
-                            <h2>算法组</h2>
-                            <span>ACM-ICPC竞赛、计算机视觉<br>算法学习</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6">
-                    <div class="color-software" style="background-color:#8DC9C1">
-                        <div class="software" style="background-image:url(../static/l-images/4.png)"></div>
-                        <div class="type-software">
-                            <h2>软件组</h2>
-                            <span>Android应用开发、PC软件<br>JAVAEE企业应用开发</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="row p">
+          (点击图片即可查看内容)
         </div>
+        <div class="m-p-g">
+          <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
+            <img src="../static/images/zp1.jpg" data-full="../static/images/zp1.jpg" class="m-p-g__thumbs-img" data-info-html="<p>2008年11月，江西师范大学ACM竞赛队第一次进入亚洲区域赛ACM-ICPC现场赛</p>"/>
+            <img src="../static/images/zp2.png" data-full="../static/images/zp2.png" class="m-p-g__thumbs-img" data-info-html="<p>2013年3月20号，江西师范大学ACM协会正式成立，其前身为江西师范大学ACM竞赛队</p>" />
+            <img src="../static/images/zp3.jpg" data-full="../static/images/zp3.jpg" class="m-p-g__thumbs-img" data-info-html="<p>2013年7月11日，算法组成员在北京大学参加第四届“蓝桥杯”决赛</p>" />
+            <img src="../static/images/zp4.jpg" data-full="../static/images/zp4.jpg" class="m-p-g__thumbs-img" data-info-html="<p>2013年9月13日，协会举办第一次算法组招新宣传会</p>" />
+            <img src="../static/images/zp5.jpg" data-full="../static/images/zp5.jpg" class="m-p-g__thumbs-img" data-info-html="<p>2013年11月，江西师范大学ACM协会更名为“计算机科学协会”（Assocation of Computer Science）,ACM竞赛队改为协会算法组。</p>" />
+            <img src="../static/images/zp6.jpg" data-full="../static/images/zp6.jpg" class="m-p-g__thumbs-img" data-info-html="<p>2014年4月25日，协会正式加入“CSDN”高校俱乐部</p>" />
+            <img src="../static/images/zp7.jpg" data-full="../static/images/zp7.jpg" class="m-p-g__thumbs-img" data-info-html="<p>2014年5月25日，算法组成员参加第39届ACM-ICPC国际大学生程序设计竞赛亚洲区西安邀请赛</p>" />
+            <img src="../static/images/zp8.jpg" data-full="../static/images/zp8.jpg" class="m-p-g__thumbs-img" data-info-html="<p>2014年5月31日，算法组成员前往北京参加“蓝桥杯”决赛</p>" />
+            <img src="../static/images/zp9.jpg" data-full="../static/images/zp9.jpg" class="m-p-g__thumbs-img" data-info-html="<p>2014年10月12日，协会举办计算机信息工程学院首届网页设计大赛</p>" />
+            <img src="../static/images/zp10.jpg" data-full="../static/images/zp10.jpg" class="m-p-g__thumbs-img" data-info-html="<p>2014年10月25日，算法组成员参加39届ACM-ICPC国际大学生程序设计竞赛亚洲区西安现场赛</p>" />
+            
+            <img src="../static/images/zp12.jpg" data-full="../static/images/zp12.jpg" class="m-p-g__thumbs-img" data-info-html="<p>2015年3月9日，协会举办网站组，软件组，硬件组联合招新宣传会，随后对报名的同学组织专业技能培训</p>" />
+            <img src="../static/images/zp13.jpg" data-full="../static/images/zp13.jpg" class="m-p-g__thumbs-img" data-info-html="<p>2015年5月16日，协会组织同学参加江西省第六届计算机作品大赛</p>" />
+            
+            <img src="../static/images/zp15.jpg" data-full="../static/images/zp15.jpg" class="m-p-g__thumbs-img" data-info-html="<p>2015年6月2日，协会组织江西师范大学2015年校ACM程序设计竞赛</p>" />
+            <img src="../static/images/zp16.jpg" data-full="../static/images/zp16.jpg" class="m-p-g__thumbs-img" data-info-html="<p>2015年8月，协会组织算法组，网站组，机器人竞赛暑假集训</p>" />
+            <img src="../static/images/zp17.png" data-full="../static/images/zp17.png" class="m-p-g__thumbs-img" data-info-html="<p>2015年9月，协会举办15级新生ACM宣传会</p>" />
+            <img src="../static/images/zp18.jpg" data-full="../static/images/zp18.jpg" class="m-p-g__thumbs-img" data-info-html="<p>2015年11月，组织参加江西省第三届软件服务外包大赛，江西省第六届智能机器人大赛</p>" />
+            <img src="../static/images/zp19.jpg" data-full="../static/images/zp19.jpg" class="m-p-g__thumbs-img" data-info-html="<p>2015年11月，算法组成员参加第40届ACM-ICPC国际大学生程序设计竞赛北京赛区现场赛</p>" />
+            <img src="../static/images/zp20.jpg" data-full="../static/images/zp20.jpg" class="m-p-g__thumbs-img" data-info-html="<p>2016年3月，举办春季联合招新宣传会，并对参加的同学进行专业技能培训</p>" />
+            <img src="../static/images/zp21.png" data-full="../static/images/zp21.png" class="m-p-g__thumbs-img" data-info-html="<p>2016年5月28日，算法组成员在北京参加第七届“蓝桥杯”决赛，参加的四名同学全部获得国家二等奖</p>" />
+            <img src="../static/images/zp22.jpg" data-full="../static/images/zp22.jpg" class="m-p-g__thumbs-img" data-info-html="<p>2016年5月24日,协会举办江西师范大学2016校ACM程序设计竞赛</p>" />
+            <img src="../static/images/zp23.jpg" data-full="../static/images/zp23.jpg" class="m-p-g__thumbs-img" data-info-html="<p>2016年6月4日，协会组织同学参加江西省第十一届计算机作品大赛</p>" />
+            <img src="../static/images/zp24.jpg" data-full="../static/images/zp24.jpg" class="m-p-g__thumbs-img" data-info-html="<p>2016年8月，组织算法组，网站组，机器人竞赛培训</p>" />
+          </div>
+          <div class="m-p-g__fullscreen">
+            <div class="m-p-g__message-box"></div>
+          </div>
+        </div>
+      </div>
     </div>
-
-
-    <div class="section3" id="page3">
-        <div class="main">
-            <ul class="cbp_tmtimeline">
-                <li>
-                    <div class="cbp_tmtime">
-                        <span>11月</span> <span>2008</span></div>
-                    <div class="cbp_tmicon cbp_tmicon-phone"></div>
-                    <div class="cbp_tmlabel">
-
-                        <div class="photo" style="background-image: url(../static/simages/2008acm.png)"></div>
-                        <h2>2008</h2>2008年11月，江西师范大学ACM竞赛队第一次进入亚洲区域赛ACM-ICPC现场赛
-                    </div>
-                </li>
-                <li>
-                    <div class="cbp_tmtime">
-                        <span>3月20号</span> <span>2013</span></div>
-                    <div class="cbp_tmicon cbp_tmicon-phone"></div>
-                    <div class="cbp_tmlabel">
-
-                        <div class="photo" style="background-image: url(../static/simages/acma.png)"></div>
-                        <h2>2013</h2>2013年3月20号，江西师范大学ACM协会正式成立，其前身为江西师范大学ACM竞赛队。
-                    </div>
-                </li>
-                <li>
-                    <div class="cbp_tmtime">
-                        <span>7月11日</span> <span> </span></div>
-                    <div class="cbp_tmicon cbp_tmicon-screen"></div>
-                    <div class="cbp_tmlabel">
-                        <div class="photo" style="background-image: url(../static/simages/zp3.jpg)"></div>
-                        <h2>2013</h2>2013年7月11日，算法组成员在北京大学参加第四届“蓝桥杯”决赛
-                    </div>
-                </li>
-                <li>
-                    <div class="cbp_tmtime">
-                        <span>9月13日</span> <span> </span></div>
-                    <div class="cbp_tmicon cbp_tmicon-phone"></div>
-                    <div class="cbp_tmlabel">
-
-                        <div class="photo" style="background-image: url(../static/simages/zp4.jpg)"></div>
-                        <h2>2013</h2>2013年9月13日，协会举办第一次算法组招新宣传会
-                    </div>
-                </li>
-                <li>
-                    <div class="cbp_tmtime">
-                        <span>11月</span> <span> </span></div>
-                    <div class="cbp_tmicon cbp_tmicon-phone"></div>
-                    <div class="cbp_tmlabel">
-                        <div class="photo" style="background-image: url(../static/simages/zp5.jpg)"></div>
-                        <h2>2013</h2>2013年11月，江西师范大学ACM协会更名为“计算机科学协会”（Assocation of Computer Science）,ACM竞赛队改为协会算法组。
-                    </div>
-                </li>
-                <li>
-                    <div class="cbp_tmtime">
-                        <span>4月25日</span> <span>2014</span>
-                    </div>
-                    <div class="cbp_tmicon cbp_tmicon-phone"></div>
-                    <div class="cbp_tmlabel">
-                        <div class="photo" style="background-image: url(../static/simages/zp6.jpg)"></div>
-                        <h2>2014</h2>2014年4月25日，协会正式加入“CSDN”高校俱乐部
-                    </div>
-                </li>
-
-                <li>
-                    <div class="cbp_tmtime">
-                        <span>5月10日</span> <span> </span>
-                    </div>
-                    <div class="cbp_tmicon cbp_tmicon-phone"></div>
-                    <div class="cbp_tmlabel">
-                        <div class="photo" style="background-image: url(../static/simages/zp7.jpg)"></div>
-                        <h2>2014</h2>2014年5月10日，协会举办“江西师范大学2014年校ACM程序设计竞赛”
-
-                    </div>
-                </li>
-                <li>
-                    <div class="cbp_tmtime">
-                        <span>5月25日</span> <span> </span>
-                    </div>
-                    <div class="cbp_tmicon cbp_tmicon-phone"></div>
-                    <div class="cbp_tmlabel">
-                        <div class="photo" style="background-image: url(../static/simages/zp8.jpg)"></div>
-                        <h2>2014</h2>2014年5月25日，算法组成员参加第39届ACM-ICPC国际大学生程序设计竞赛亚洲区西安邀请赛
-
-                    </div>
-                </li>
-                <li>
-                    <div class="cbp_tmtime">
-                        <span>5月31日</span> <span> </span>
-                    </div>
-                    <div class="cbp_tmicon cbp_tmicon-phone"></div>
-                    <div class="cbp_tmlabel">
-                        <div class="photo" style="background-image: url(../static/simages/zp9.jpg)"></div>
-                        <h2>2014</h2>2014年5月31日，算法组成员前往北京参加“蓝桥杯”决赛
-                    </div>
-                </li>
-                <li>
-                    <div class="cbp_tmtime">
-                        <span>10月12日</span> <span> </span>
-                    </div>
-                    <div class="cbp_tmicon cbp_tmicon-phone"></div>
-                    <div class="cbp_tmlabel">
-                        <div class="photo" style="background-image: url(../static/simages/zp10.jpg)"></div>
-                        <h2>2014</h2>2014年10月12日，协会举办计算机信息工程学院首届网页设计大赛
-
-                    </div>
-                </li>
-
-                <li>
-                    <div class="cbp_tmtime">
-                        <span>10月25日</span> <span> </span>
-                    </div>
-                    <div class="cbp_tmicon cbp_tmicon-phone"></div>
-                    <div class="cbp_tmlabel">
-                        <div class="photo" style="background-image: url(../static/simages/zp12.jpg)"></div>
-                        <h2>2014</h2>2014年10月25日，算法组成员参加39届ACM-ICPC国际大学生程序设计竞赛亚洲区西安现场赛
-                    </div>
-                </li>
-                <li>
-                    <div class="cbp_tmtime">
-                        <span>3月9日</span> <span>2015</span>
-                    </div>
-                    <div class="cbp_tmicon cbp_tmicon-phone"></div>
-                    <div class="cbp_tmlabel">
-                        <div class="photo" style="background-image: url(../static/simages/learn.jpg)"></div>
-                        <h2>2015</h2>2015年3月9日，协会举办网站组，软件组，硬件组联合招新宣传会，随后对报名的同学组织专业技能培训
-                    </div>
-                </li>
-                <li>
-                    <div class="cbp_tmtime">
-                        <span>5月16日</span> <span> </span>
-                    </div>
-                    <div class="cbp_tmicon cbp_tmicon-phone"></div>
-                    <div class="cbp_tmlabel">
-                        <div class="photo" style="background-image: url(../static/simages/zp15.jpg)"></div>
-                        <h2>2015</h2>2015年5月16日，协会组织同学参加江西省第六届计算机作品大赛
-                    </div>
-                </li>
-                <li>
-                    <div class="cbp_tmtime">
-                        <span>6月2日</span> <span> </span>
-                    </div>
-                    <div class="cbp_tmicon cbp_tmicon-phone"></div>
-                    <div class="cbp_tmlabel">
-                        <div class="photo" style="background-image: url(../static/simages/zp16.jpg)"></div>
-                        <h2>2015</h2>2015年6月2日，协会组织江西师范大学2015年校ACM程序设计竞赛
-                    </div>
-                </li>
-                <li>
-                    <div class="cbp_tmtime">
-                        <span>8月</span> <span> </span>
-                    </div>
-                    <div class="cbp_tmicon cbp_tmicon-phone"></div>
-                    <div class="cbp_tmlabel">
-                        <div class="photo" style="background-image: url(../static/simages/zp17.png)"></div>
-                        <h2>2015</h2>2015年8月，协会组织算法组，网站组，机器人竞赛暑假集训
-                    </div>
-                </li>
-                <li>
-                    <div class="cbp_tmtime">
-                        <span>9月</span> <span> </span>
-                    </div>
-                    <div class="cbp_tmicon cbp_tmicon-phone"></div>
-                    <div class="cbp_tmlabel">
-                        <div class="photo" style="background-image: url(../static/simages/zp18.jpg)"></div>
-                        <h2>2015</h2>2015年9月，协会举办15级新生ACM宣传会
-                    </div>
-                </li>
-                <li>
-                    <div class="cbp_tmtime">
-                        <span>11月</span> <span> </span>
-                    </div>
-                    <div class="cbp_tmicon cbp_tmicon-phone"></div>
-                    <div class="cbp_tmlabel">
-                        <div class="photo" style="background-image: url(../static/simages/robot.jpg)"></div>
-                        <h2>2015</h2>2015年11月，组织参加江西省第三届软件服务外包大赛，江西省第六届智能机器人大赛
-                    </div>
-                </li>
-                <li>
-                    <div class="cbp_tmtime">
-                        <span>11月</span> <span> </span>
-                    </div>
-                    <div class="cbp_tmicon cbp_tmicon-phone"></div>
-                    <div class="cbp_tmlabel">
-                        <div class="photo" style="background-image: url(../static/simages/zp20.jpg)"></div>
-                        <h2>2015</h2>2015年11月，算法组成员参加第40届ACM-ICPC国际大学生程序设计竞赛北京赛区现场赛
-                    </div>
-                </li>
-                <li>
-                    <div class="cbp_tmtime">
-                        <span>3月</span> <span>2016</span>
-                    </div>
-                    <div class="cbp_tmicon cbp_tmicon-phone"></div>
-                    <div class="cbp_tmlabel">
-                        <div class="photo" style="background-image: url(../static/simages/zp21.png)"></div>
-                        <h2>2016</h2>2016年3月，举办春季联合招新宣传会，并对参加的同学进行专业技能培训
-                    </div>
-                </li>
-                <li>
-                    <div class="cbp_tmtime">
-                        <span>5月28日</span> <span> </span>
-                    </div>
-                    <div class="cbp_tmicon cbp_tmicon-phone"></div>
-                    <div class="cbp_tmlabel">
-                        <div class="photo" style="background-image: url(../static/simages/zp22.jpg)"></div>
-                        <h2>2016</h2>2016年5月28日，算法组成员在北京参加第七届“蓝桥杯”决赛，参加的四名同学全部获得国家二等奖
-                    </div>
-                </li>
-                <li>
-                    <div class="cbp_tmtime">
-                        <span>5月24日</span> <span> </span>
-                    </div>
-                    <div class="cbp_tmicon cbp_tmicon-phone"></div>
-                    <div class="cbp_tmlabel">
-                        <div class="photo" style="background-image: url(../static/simages/2016acm_school.png)"></div>
-                        <h2>2016</h2>2016年5月24日,协会举办江西师范大学2016校ACM程序设计竞赛
-                    </div>
-                </li>
-                <li>
-                    <div class="cbp_tmtime">
-                        <span>6月4日</span> <span> </span>
-                    </div>
-                    <div class="cbp_tmicon cbp_tmicon-phone"></div>
-                    <div class="cbp_tmlabel">
-                        <div class="photo" style="background-image: url(../static/simages/zp23.jpg)"></div>
-                        <h2>2016</h2>2016年6月4日，协会组织同学参加江西省第十一届计算机作品大赛
-                    </div>
-                </li>
-                <li>
-                    <div class="cbp_tmtime">
-                        <span>8月</span> <span> </span>
-                    </div>
-                    <div class="cbp_tmicon cbp_tmicon-phone"></div>
-                    <div class="cbp_tmlabel">
-                        <div class="photo" style="background-image: url(../static/simages/zp24.jpg)"></div>
-                        <h2>2016</h2>2016年8月，组织算法组，网站组，机器人竞赛培训
-                    </div>
-                </li>
-            </ul>
+    <div id="b4" class="row index-display block-2">
+      <div class="container item-block-2">
+        <div class="row title">
+          <i></i><h3>加入我们</h3><i></i>
         </div>
-    </div>
-
-    <div class="section4 fp-auto-height" id="nav4">
-        <h2> 加入我们 </h2>
-        <p>We have a lot of good things what are worth of be have,so join us!</p>
-        <p>This is the beginning of your dream！</P>
-        <div class="message">
-
-            <div></div>
-
-            <div class="login">
-                <form method='post' id="form_data">
-                    <div class="login1"><input class="id" type="text" name="id"></div>
-                    </p>
-                    <div class="login2"><input class="name" type="text" name="name"></div>
-                    </p>
-                    <div class="login3"><input type="text" class="class" name="class"></div>
-                    </p>
-                    <div class="login4"><input type="text" class="qq" name="qq"></div>
-                    </p>
-                </form>
+        <div class="row p">
+          <p>-有饭吃的哦-</p>
+        </div>
+        <div class="row form">
+          <form id="form_data">
+            <div class="form-group">
+              <label for="input-id">学号</label>
+              <input type="number" class="input" id="input-id" name="id" placeholder="学号" required />
             </div>
-            <div class="login5"><input type="button" class="submit" value="提交"></div>
-            </p>
-
-
-        </div>
-        <div class="fp-auto-height">
-            <div class="end">
-                <table>
-                    <tr>
-                        <td>版权：计算机科学协会 &nbsp&nbsp&nbsp</td>
-                        <td>邮箱：jxnuacs@qq.com</td>
-                    </tr>
-                    <br>
-                    <tr>
-                        <td>运维：计算机科学协会网站组&nbsp&nbsp&nbsp</td>
-                        <td>地址：先骕楼计算机学院X4308</td>
-                    </tr>
-                </table>
+            <div class="form-group">
+              <label for="input-name">姓名</label>
+              <input type="text" class="input" id="input-name"  name="name" placeholder="姓名" required />
             </div>
+            <div class="form-group">
+              <label for="input-name">班级</label>
+              <input type="text" class="input" id="input-class" name="class" placeholder="班级" required />
+            </div>
+            <div class="form-group">
+              <label for="input-id">联系方式</label>
+              <textarea type="text" class="input" name='qq' placeholder="联系方式" rows="3" required ></textarea>
+            </div>
+            <button type="submit" class="btn">提交</button>
+          </form>
+          
         </div>
+      </div>
     </div>
-</div>
-</body>
-<script>
-    $(document).ready(function () {
-        var csrftoken = $('meta[name=csrf-token]').attr('content')
-
+    <footer class="row block-footer">
+      <img src="../static/images/logo-b.png" width="200">
+      <p>associationof computer science<br>邮箱：jxnuacs@qq.com<br>地址：先骕楼计算机学院X4308网站组</p>
+    </footer>
+  </div>
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdn.bootcss.com/jqBootstrapValidation/1.3.7/jqBootstrapValidation.min.js"></script>
+  <script type="text/javascript" src="../static/js/material-photo-gallery.js"></script>
+  <script type="text/javascript" src="../static/js/index.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    var csrftoken = $('meta[name=csrf-token]').attr('content')
         $.ajaxSetup({
             beforeSend: function (xhr, settings) {
                 if (!/^(GET|HEAD|OPTIONS|TRACE)$/i.test(settings.type)) {
@@ -392,24 +215,28 @@
                 }
             }
         })
-
-        $(".submit").bind('click', function () {
-            $.ajax({
-                url: window.location.protocol + "//" + window.location.host + "/login",
-                dataType: "json",
-                type: "POST",
-                cache: false,
-                data: $("#form_data").serializeArray(),
-                success: function (data) {
-                    $('.message div:first').text(data['msg']);
-
-
-                }
+    acs.setBlockHeight($(".block-1"));
+    acs.setNavBg($(".navbar"));
+    acs.scrollAnchor($(".nav-anchor"));
+    new MaterialPhotoGallery(document.querySelector('.m-p-g'));
+    $("input,select,textarea").not("[type=submit]").jqBootstrapValidation();
+    $("#form_data").submit(function(){return false})
+    $(".btn").bind('click', function () {
+              $.ajax({
+                  url: window.location.protocol + "//" + window.location.host + "/login",
+                  dataType: "json",
+                  type: "POST",
+                  cache: false,
+                  data: $("#form_data").serializeArray(),
+                  success: function (data) {
+                      alert(data['msg']);                                
+                  }
+              })
             })
+    
+  })
 
-        })
+  </script>
+</body>
 
-    })
-
-</script>
 </html>
