@@ -52,7 +52,7 @@
             <h2>你的追梦之路<br>
               有我们相伴</h2>
           </div>
-          <a type="button" class="btn btn-default">加入我们</a>
+          <a type="button" class="btn btn-default nav-anchor" data-href="#b4">加入我们</a>
           <div class="chilun-anim">
           <div class="chilun0"></div>
           <div class="chilun1"></div>
@@ -221,7 +221,7 @@
     new MaterialPhotoGallery(document.querySelector('.m-p-g'));
     $("input,select,textarea").not("[type=submit]").jqBootstrapValidation();
     $("#form_data").submit(function(){return false})
-    $(".btn").bind('click', function () {
+    $("form button[class='btn']").bind('click', function () {
               $.ajax({
                   url: window.location.protocol + "//" + window.location.host + "/login",
                   dataType: "json",
