@@ -5,6 +5,9 @@ the website of JXNU-ACS
 # 环境准备
 配置
 config.py
+	
+	import os
+
 
 	class Config:
 	    SECRET_KEY = os.environ.get('SECRET_KEY') or 'hard to guess string'
