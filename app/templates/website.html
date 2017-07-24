@@ -14,7 +14,7 @@
   <link rel="stylesheet" type="text/css" href="http://otiryjpu9.bkt.clouddn.com/static/css/material-photo-gallery.css">
 </head>
 
-<body class="index">
+<body class="index" style="overflow-x: hidden">
   <div class="container-fluid">
     <nav class="navbar navbar-default navbar-transparent navbar-fixed-top">
       <div class="container">
@@ -34,8 +34,8 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a class="nav-anchor" data-href="#b2">acs简介</a></li>
-            <li><a class="nav-anchor" data-href="#b3">acs历史</a></li>
+            <li><a class="nav-anchor" data-href="#b2">ACS简介</a></li>
+            <li><a class="nav-anchor" data-href="#b3">ACS历史</a></li>
             <li><a class="nav-anchor" data-href="#b4">加入我们</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
@@ -235,7 +235,9 @@
               })
             })
   })
-
+  document.addEventListener('touchmove', function (event) {
+    if (event.scale !== 1) { event.preventDefault(); }
+  }, false);
   </script>
 </body>
 
