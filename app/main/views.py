@@ -2,11 +2,12 @@
 import json
 
 import requests
-from flask import render_template, jsonify, request
+from flask import render_template, jsonify, request, flash, redirect, url_for
+from flask_login import login_user
 
 from . import main
-from .. import csrf
-from ..models import Student, db
+from .. import csrf, db
+from ..models import Student, Manager
 
 
 @main.route('/', methods=['GET', 'POST'])
@@ -15,8 +16,8 @@ def index():
 
 
 @csrf.exempt
-@main.route("/login", methods=["POST"])
-def login():
+@main.route("/register", methods=["POST"])
+def register():
     info = request.form;
     stu_id = info.get('id')
     name = info.get('name')
@@ -39,3 +40,24 @@ def login():
     else:
         return jsonify({'msg': u'你已经报过名，请勿重复操作'})
     return jsonify({'msg': 'error'})
+
+
+
+@csrf.exempt
+@main.route("/login", methods=["POST","GET"])
+def login():
+    info = request.form
+    account = info.get('account')
+    password = info.get('password')
+    if not account or not password:
+        return render_template('login.html')
+    ma = Manager.query.filter_by(account=account).first()
+    if  ma and ma.verify_password(password):
+        login_user(ma)
+        return redirect(request.args.get('next') or url_for('admin.index'))
+    flash(u"密码错误")
+    return render_template('login.html')
+
+
+
+

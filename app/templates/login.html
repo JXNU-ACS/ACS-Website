@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>登录</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset='utf-8'>
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <link href="{{ url_for('static', filename= 'css/login.css') }} " rel='stylesheet' type='text/css'/>
+
+</head>
+<body>
+<script>$(document).ready(function (c) {
+    $('.close').on('click', function (c) {
+        $('.login-form').fadeOut('slow', function (c) {
+            $('.login-form').remove();
+        });
+    });
+});
+</script>
+<!--SIGN UP-->
+<h1>ACS 管理员登录</h1>
+<div class="login-form">
+    <div class="close"></div>
+    <div class="head-info">
+        <label class="lbl-1"> </label>
+        <label class="lbl-2"> </label>
+        <label class="lbl-3"> </label>
+    </div>
+    <div class="clear"></div>
+    <div class="avtar">
+        <img src="{{ url_for('static',filename='images/login_images/logo.png') }}" width="80px" height="80px"/>
+    </div>
+    <form method="post">
+
+
+        <input type="text" class="text" name="account" required='required' placeholder="账号">
+        <div class="key">
+            <input type="password" name="password" required='required' placeholder="密码">
+        </div>
+
+        <div class="signin">
+            <input type="submit" value="登录">
+        </div>
+    </form>
+</div>
+
+
+</body>
+<script>
+    {% for message in get_flashed_messages() %}
+        var m = '{{  message }}';
+        alert(m);
+
+    {% endfor %}
+</script>
+</html>
