@@ -13,6 +13,9 @@ config.py
 	    SECRET_KEY = os.environ.get('SECRET_KEY') or 'hard to guess string'
 	    SQLALCHEMY_COMMIT_ON_TEARDOWN = True
 	    SQLALCHEMY_TRACK_MODIFICATIONS = True
+	    BABEL_DEFAULT_LOCALE = 'zh_CN'
+        WTF_CSRF_CHECK_DEFAULT = True
+
 
 
 	class DevelopmentConfig(Config):
