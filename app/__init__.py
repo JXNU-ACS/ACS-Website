@@ -1,7 +1,8 @@
+# -*- coding: utf-8 -*-
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_wtf.csrf import CSRFProtect
-from flask_admin import Admin
+from flask_admin import Admin, AdminIndexView
 from flask_babelex import Babel
 from flask_login import LoginManager
 
@@ -23,9 +24,10 @@ def create_app(config_name):
 
     db.init_app(app)
     csrf.init_app(app)
-    admin.init_app(app)
+    admin.init_app(app, index_view=AdminIndexView(name=u'首页', template='admin.html', url='/admin'))
     babel.init_app(app)
     login_manager.init_app(app)
+
 
     from .main import main as main_blueprint
     app.register_blueprint(main_blueprint)

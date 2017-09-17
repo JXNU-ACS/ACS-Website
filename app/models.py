@@ -1,10 +1,16 @@
+# -*- coding: utf-8 -*-
+from flask_login import UserMixin, AnonymousUserMixin
+
 from . import db
 from . import login_manager
-from flask_login import UserMixin,AnonymousUserMixin
+
 
 @login_manager.user_loader
 def user_loader(user_id):
     return Manager.query.get(int(user_id))
+
+login_manager.login_message = u"请先登录！"
+
 
 class Student(db.Model):
     __tablename__ = 'students'

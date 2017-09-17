@@ -36,7 +36,7 @@
     </div>
     <form method="post">
 
-
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
         <input type="text" class="text" name="account" required='required' placeholder="账号">
         <div class="key">
             <input type="password" name="password" required='required' placeholder="密码">

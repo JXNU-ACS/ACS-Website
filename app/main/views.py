@@ -15,7 +15,6 @@ def index():
     return render_template('website.html')
 
 
-@csrf.exempt
 @main.route("/register", methods=["POST"])
 def register():
     info = request.form;
@@ -43,7 +42,6 @@ def register():
 
 
 
-@csrf.exempt
 @main.route("/login", methods=["POST","GET"])
 def login():
     info = request.form
@@ -54,7 +52,7 @@ def login():
     ma = Manager.query.filter_by(account=account).first()
     if  ma and ma.verify_password(password):
         login_user(ma)
-        return redirect(request.args.get('next') or url_for('admin.index'))
+        return redirect(url_for('admin.index'))
     flash(u"密码错误")
     return render_template('login.html')
 
