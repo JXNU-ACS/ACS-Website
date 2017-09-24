@@ -6,11 +6,12 @@ from flask import render_template, jsonify, request, flash, redirect, url_for
 from flask_login import login_user
 
 from . import main
-from .. import csrf, db
+from .. import csrf, db, cache
 from ..models import Student, Manager
 
 
 @main.route('/', methods=['GET', 'POST'])
+@cache.cached(timeout=60*60,key_prefix='ACS-Website')
 def index():
     return render_template('website.html')
 

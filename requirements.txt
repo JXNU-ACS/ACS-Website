@@ -9,4 +9,7 @@ PyMySQL==0.7.11
 flask-admin==1.5.0
 flask-babelex==0.9.3
 flask-login==0.4.0
+flask-cache==0.13.1
+redis==2.10.6
+
 
