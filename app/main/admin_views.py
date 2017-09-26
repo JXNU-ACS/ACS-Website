@@ -6,6 +6,7 @@ from flask_admin.contrib.sqla import ModelView
 from flask_login import current_user, logout_user
 from jinja2 import Markup
 from wtforms.validators import DataRequired
+
 from . import main
 from .. import admin, db
 from ..models import Student, Manager, PictureWall, file_path
@@ -14,6 +15,7 @@ from ..models import Student, Manager, PictureWall, file_path
 class StudentView(ModelView):
     column_list = ('stu_id', 'name', 'stu_class', 'qq')
     column_labels = dict(stu_id=u"学号", name=u'姓名', stu_class=u'班级', qq=u"联系方式")
+    can_export = True
 
     def __init__(self, session, **kwargs):
         super(StudentView, self).__init__(Student, session, **kwargs)
@@ -55,6 +57,9 @@ class ImageView(ModelView):
     column_labels = dict(pic_url=u"图片", name=u'名字', info=u'说明', add_time=u"添加时间",)
     column_default_sort = ('add_time')
     form_excluded_columns = ('remote_url')
+    form_edit_rules = ( 'name', 'info', 'add_time') # 修改表单显示的字段
+    column_editable_list = ('name', 'info', 'add_time') # 可以ajax实时编辑的字段
+
 
     def __init__(self, session, **kwargs):
         super(ImageView, self).__init__(PictureWall, session, **kwargs)
@@ -80,10 +85,12 @@ class ImageView(ModelView):
     # Alternative way to contribute field is to override it completely.
     # In this case, Flask-Admin won't attempt to merge various parameters for the field.
     form_extra_fields = {
-        'pic_url': form.ImageUploadField(u'图片(此字段暂不允许修改)',
+        'pic_url': form.ImageUploadField(u'图片',
                                       base_path=file_path,
                                       thumbnail_size=(100, 100, True),validators=[DataRequired()])
-}
+    }
+
+
 
 admin.add_view(ImageView(db.session,name=u'图片墙'))
 

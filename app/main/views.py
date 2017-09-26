@@ -7,13 +7,13 @@ from flask_login import login_user
 
 from . import main
 from .. import csrf, db, cache
-from ..models import Student, Manager
+from ..models import Student, Manager, PictureWall
 
 
 @main.route('/', methods=['GET', 'POST'])
-@cache.cached(timeout=60*60,key_prefix='ACS-Website')
 def index():
-    return render_template('website.html')
+    all_pic = PictureWall.query.all()
+    return render_template('website.html',all_pic=all_pic)
 
 
 @main.route("/register", methods=["POST"])
@@ -56,7 +56,3 @@ def login():
         return redirect(url_for('admin.index'))
     flash(u"密码错误")
     return render_template('login.html')
-
-
-
-
