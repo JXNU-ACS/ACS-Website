@@ -11,6 +11,7 @@ from ..models import Student, Manager, PictureWall
 
 
 @main.route('/', methods=['GET', 'POST'])
+@cache.cached(timeout=60*60,key_prefix='ACS-Website')
 def index():
     all_pic = PictureWall.query.all()
     return render_template('website.html',all_pic=all_pic)
