@@ -50,10 +50,10 @@ login_manager.anonymous_user = AnonymousUser
 class PictureWall(db.Model):
     __tablename__='picturewall'
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(128), unique=True)
-    pic_url= db.Column(db.String(128), unique=True,nullable=False)
+    name = db.Column(db.String(128))
+    pic_url= db.Column(db.String(128))
     info = db.Column(db.Text)
-    remote_url = db.Column(db.String(128), unique=True)
+    remote_url = db.Column(db.String(128))
     add_time = db.Column(db.DateTime, default=datetime.now)
 
 
