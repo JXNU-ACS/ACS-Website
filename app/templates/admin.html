@@ -1,5 +1,7 @@
 {% extends 'admin/master.html' %}
-
+{% block head_meta %}
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+{% endblock %}
 {% block body %}
   <p>Hello world</p>
 {% endblock %}
