@@ -46,6 +46,7 @@ class ManagerView(ModelView):
 admin.add_view(StudentView(db.session, name=u'学生报名表'))
 admin.add_view(ManagerView(db.session, name=u"管理员表"))
 
+
 @main.before_app_request
 def check_need_login():
     if str(request.url_rule)[1:6] == 'admin' and not current_user.is_authenticated:
@@ -55,11 +56,10 @@ def check_need_login():
 class ImageView(ModelView):
     column_list = ('pic_url', 'name', 'info', 'add_time')
     column_labels = dict(pic_url=u"图片", name=u'名字', info=u'说明', add_time=u"添加时间",)
-    column_default_sort = ('add_time')
-    form_excluded_columns = ('remote_url')
-    form_edit_rules = ( 'name', 'info', 'add_time') # 修改表单显示的字段
-    column_editable_list = ('name', 'info', 'add_time') # 可以ajax实时编辑的字段
-
+    column_default_sort = ('add_time',)
+    form_excluded_columns = ('remote_url',)
+    form_edit_rules = ('name', 'info', 'add_time')  # 修改表单显示的字段
+    column_editable_list = ('name', 'info', 'add_time')  # 可以ajax实时编辑的字段
 
     def __init__(self, session, **kwargs):
         super(ImageView, self).__init__(PictureWall, session, **kwargs)
@@ -72,7 +72,7 @@ class ImageView(ModelView):
         return redirect(url_for('main.login'))
 
     def _list_thumbnail(view, context, model, name):
-        if  model.remote_url:
+        if model.remote_url:
             return Markup('<img src="%s">' % model.remote_url)
 
         return Markup('<img src="%s">' % url_for('static',
@@ -86,10 +86,10 @@ class ImageView(ModelView):
     # In this case, Flask-Admin won't attempt to merge various parameters for the field.
     form_extra_fields = {
         'pic_url': form.ImageUploadField(u'图片',
-                                      base_path=file_path,
-                                      thumbnail_size=(100, 100, True),validators=[DataRequired()])
+                                         base_path=file_path,
+                                         thumbnail_size=(100, 100, True),
+                                         validators=[DataRequired()])
     }
-
 
 
 admin.add_view(ImageView(db.session,name=u'图片墙'))

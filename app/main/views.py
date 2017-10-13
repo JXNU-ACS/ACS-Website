@@ -6,12 +6,11 @@ from flask import render_template, jsonify, request, flash, redirect, url_for
 from flask_login import login_user
 
 from . import main
-from .. import csrf, db, cache
+from .. import db
 from ..models import Student, Manager, PictureWall
 
 
 @main.route('/', methods=['GET', 'POST'])
-@cache.cached(timeout=60*60,key_prefix='ACS-Website')
 def index():
     all_pic = PictureWall.query.all()
     return render_template('website.html',all_pic=all_pic)
@@ -19,7 +18,7 @@ def index():
 
 @main.route("/register", methods=["POST"])
 def register():
-    info = request.form;
+    info = request.form
     stu_id = info.get('id')
     name = info.get('name')
     stu_class = info.get('class')
@@ -43,8 +42,7 @@ def register():
     return jsonify({'msg': 'error'})
 
 
-
-@main.route("/login", methods=["POST","GET"])
+@main.route("/login", methods=["POST", "GET"])
 def login():
     info = request.form
     account = info.get('account')
